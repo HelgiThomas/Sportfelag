@@ -22,6 +22,7 @@
 
   <!-- Custom styling plus plugins -->
   <link href="../src/scss/temp.css" rel="stylesheet">
+  <link href="dist/css/animsition.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -49,6 +50,7 @@
   </div>
 </nav> <!-- END OF NAVBAR-->
 
+<div class="animsition">
 <section>
   <div class="container">
   <div class = "box-header">
@@ -137,6 +139,7 @@
   </div>
 </div>
 </section>
+</div>
 
 <!-- FOOTER-->
 <footer class="fixed-footer">
@@ -161,19 +164,17 @@
 </footer>
 
 <!-- jQuery -->
-<script src="../vendors/jquery/dist/jquery.min.js"></script>
-<!-- Bootstrap -->
-<script src="bootstrap-4.0.0-alpha.6-dist/js/bootstrap.min.js"></script>
-<!-- FastClick -->
-<script src="../vendors/fastclick/lib/fastclick.js"></script>
-<!-- NProgress -->
-<script src="../vendors/nprogress/nprogress.js"></script>
-<!-- FullCalendar -->
-<script src="../vendors/moment/min/moment.min.js"></script>
-<script src="../vendors/fullcalendar/dist/fullcalendar.min.js"></script>
-
-<!-- Custom Theme Scripts -->
-<script src="../build/js/custom.min.js"></script>
+  <script src="../vendors/jquery/dist/jquery.min.js"></script>
+  <script src="dist/js/animsition.min.js" charset="utf-8"></script>
+  <script>
+  $(document).ready(function() {
+    $('.animsition').animsition();
+  });
+  </script>
+  <!-- Bootstrap -->
+  <script src="bootstrap-4.0.0-alpha.6-dist/js/bootstrap.min.js"></script>
+  <!-- Custom Theme Scripts -->
+  <script src="../build/js/custom.min.js"></script>
 
 </body>
 </html>
